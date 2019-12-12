@@ -61,8 +61,9 @@ h = set()
 step = 0
 ti = time.time()
 while True:
-    #print(f"step {step}\n{moons_pos}\n{moons_vel}")
+    #sprint(f"step {step}\n{moons_pos}\n{moons_vel}")
     a = hash(tuple(map(tuple,moons_pos)))
+    #a = str(moons_pos)
     if a in h:
         print(f"found: {step}")
     h.add(a)
